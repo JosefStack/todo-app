@@ -12,13 +12,15 @@
         <% tasks.forEach((task) => { %>
             
             <li class="task-item">
-                <div>
-                    <span><%- task.task %></span>
-                </div>
+                <div class="item">
+                    <div>
+                        <span><%- task.task %></span>
+                    </div>
 
-                <a href="/delete/<%- task.id %>">
-                    <i class='bx  bx-x'></i> 
-                </a>    
+                    <a href="/delete/<%- task.id %>">
+                        <i class='bx  bx-x'></i> 
+                    </a>  
+                </div>  
             </li>
 
         <% }) %>
