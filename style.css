@@ -1,0 +1,12 @@
+.container {
+    /* width: 100vw; */
+    /* height: auto; */
+    outline: 2px solid red;
+    column-count: 3;
+    column-gap: 10px;
+}
+
+h1 {
+    overflow: hidden;
+    outline: 2px solid black;
+}

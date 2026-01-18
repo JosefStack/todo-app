@@ -34,7 +34,7 @@ app.get("/delete/:id", (req, res) => {
 app.get("/", (req, res) => {
     res.render("index.ejs", 
         {
-            tasks : tasksList
+            tasks : tasksList.reverse()
         }
     );
     

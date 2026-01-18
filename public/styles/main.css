@@ -1,0 +1,38 @@
+#main {
+    width: 70vw;
+    margin: auto;
+}
+
+ul {
+    column-count: 4;
+    column-gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+
+li {
+    outline: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+
+li div {
+    /* outline: 2px solid red; */
+    display: flex;
+    flex: 1;
+}   
+
+li a {
+    display: flex;
+    align-items: center;
+}
+
+li div span {
+    /* white-space: wrap; */
+    word-break: break-word;
+}

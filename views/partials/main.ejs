@@ -1,0 +1,28 @@
+<section id="main">
+
+
+
+    <form action="/add" method="POST">
+            <input type="text" name="task" placeholder="Enter task here">
+            <input type="submit" value="Add task">
+    </form>
+
+    <ul class="tasks-container">
+
+        <% tasks.forEach((task) => { %>
+            
+            <li class="task-item">
+                <div>
+                    <span><%- task.task %></span>
+                </div>
+
+                <a href="/delete/<%- task.id %>">
+                    <i class='bx  bx-x'></i> 
+                </a>    
+            </li>
+
+        <% }) %>
+
+    </ul>
+
+</section>

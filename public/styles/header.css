@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    outline: 2px solid black;
+    width: 70vw;
+    margin: auto;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.bx-note-book {
+    /* outline: 2px solid black; */
+    font-size: 26px;
+    display: block;
+}
+
+.search-box {
+    outline: 2px solid black;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.search-box > form {
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.search-box form input {
+    border: none;
+    background: transparent;
+}
+
+.search-box form input:focus {
+    outline: none;
+}
