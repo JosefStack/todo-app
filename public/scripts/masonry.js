@@ -3,13 +3,25 @@ const tasks = document.querySelectorAll(".task-item");
 
 
 const resize = function() {
+    
+    const styles = getComputedStyle(container);
+    const gap = parseInt(styles.getPropertyValue("gap"));
+    const rowHeight = parseInt(styles.getPropertyValue("grid-auto-rows"));
+
     tasks.forEach((task) => {
-    const height = task.firstElementChild.clientHeight; 
-    console.log(height);
-    const span = Math.ceil(height/(10+10));
-    console.log(span);
-    task.style.gridRowEnd = `span ${span}`;
-})  
+
+        const contentHeight = task.firstElementChild.clientHeight;
+        
+
+        const span = Math.ceil(
+            (contentHeight + gap) / (rowHeight + gap)
+        );
+        
+
+        task.style.gridRowEnd = `span ${span}`;
+
+    })
+
 }
 
 resize();

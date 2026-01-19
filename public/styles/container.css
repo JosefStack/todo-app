@@ -1,0 +1,17 @@
+:root {
+    --color-background: #232526;
+    --color-text : #efefef;
+    --color-content-background: #414345;
+}
+
+.container {
+    overflow: hidden;
+    /* overflow-y: scroll; */
+    width: 72vw;
+    height: calc(100vh - 40*2px);
+    margin: auto;
+    padding: 20px;
+    outline: 1px solid white;   
+    border-radius: 20px;
+
+}   
